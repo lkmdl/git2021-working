@@ -1,0 +1,137 @@
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    html {
+      font-size: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 700px;
+      margin: 0 auto
+    }
+
+    nav {
+      /*스크롤박스 외부 원래 문서 배치 */
+      /* 스크롤박스 내부 top/left */
+      position: sticky;
+      top: 0px;
+      z-index: 10;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      /* 태그 안에 컨텐츠를 중앙 정렬 */
+      text-align: center;
+    }
+
+    nav li {
+      /* 옆으로 정렬 */
+      display: inline-block;
+      margin-left: 5rem
+    }
+
+    /* 첫번째 요소는 마진을 없앰 */
+    nav li:first-child {
+      margin-left: 0;
+    }
+
+    article {
+      /* calculate : 계산하다. */
+      /* -/+ 꼭 띄어쓰기기를 해야함, 붙이면 부호로 */
+      width: calc(100% - 200px - 1rem);
+      float: left;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    aside {
+      width: 200px;
+      float: left;
+      position: sticky;
+      top: 5.5rem
+    }
+
+    section {
+      /* a태그로 스크롤 이동했을 때 상단 마진을 줌 */
+      /* id가 걸려있는 요소에 걸어야함 */
+      scroll-margin-top: 8rem;
+    }
+
+    footer {
+      clear: both;
+    }
+
+    header,
+    nav,
+    .banner article,
+    footer,
+    aside {
+      background-color: sandybrown;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>header</h1>
+  </header>
+  <nav>
+    <h1>nav</h1>
+    <ul>
+      <li><a href="manu-1">manu1</a></li>
+      <li><a href="manu-2">manu1</a></li>
+      <li><a href="manu-3">manu1</a></li>
+    </ul>
+  </nav>
+  <div class="banner">
+    <h1>banner</h1>
+  </div>
+  <article>
+    <section id="menu-1">
+      <h2>menu1</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad facere hic fugit unde labore voluptates ut optio,
+        inventore eveniet amet aliquam consectetur voluptatibus asperiores sequi sint quidem blanditiis, ratione enim.
+      </p>
+    </section>
+    <section id="menu-2">
+      <h2>menu2</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad facere hic fugit unde labore voluptates ut optio,
+        inventore eveniet amet aliquam consectetur voluptatibus asperiores sequi sint quidem blanditiis, ratione enim.
+      </p>
+    </section>
+    <section id="menu-3">
+      <h2>menu3</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad facere hic fugit unde labore voluptates ut optio,
+        inventore eveniet amet aliquam consectetur voluptatibus asperiores sequi sint quidem blanditiis, ratione enim.
+      </p>
+    </section>
+  </article>
+  <aside>
+    <h1>aside</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsa recusandae voluptatem fugiat quia molestiae
+      ducimus deserunt voluptatibus beatae ullam odio, distinctio natus quidem dolores, est suscipit ut minima quae.
+    </p>
+  </aside>
+  <footer>
+    <h3>footer</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit est quasi sunt dolore quis inventore totam
+      ab alias excepturi, dignissimos molestias assumenda accusamus ratione ipsam voluptate corrupti, quo labore
+      perferendis!
+    </p>
+
+  </footer>
+</body>
+
+</html>
