@@ -1,0 +1,47 @@
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    div {
+      width: 250px;
+      height: 250px;
+
+      /* 모서리 다듬기 */
+      border-radius: 45px;
+    }
+
+    .box1 {
+      border-width: 3px;
+      border-style: solid;
+      border-color: black;
+
+      /* 시계방향 왼쪽위, 오른쪽의, 오른쪽아래, 왼쪽아래 */
+      border-radius: 50px, 30px 20px, 10px
+    }
+
+    .box2 {
+      /* 두께 종류 색상 */
+      border: 3px solid block black;
+      /* border: 3px solid dotted black; */
+      /* border: 3px solid double black; */
+      /* border: 3px dashed black; */
+      border-radius: 5px;
+      border-radius: 125px;
+
+      /* 정사각형이면 한쪽크기 1/2 */
+      /* border-radius: 125px */
+
+      /* 원으로 표시 */
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box1"></div>
+  <div class="box2"></div>
+</body>
+
+</html>
