@@ -1,0 +1,32 @@
+<!--
+
+아래 표현식들의 결과를 예측해보세요.
+
+5 > 4
+"apple" > "pineapple"
+"2" > "12"
+undefined == null
+undefined === null
+null == "\n0\n"
+null === +"\n0\n"
+
+-->
+
+<html>
+
+<body>
+
+  <script>
+    5 > 4;                    // t :5는 4보다 큼
+    "apple" > "pineapple";    // t :유니코드 순서에 a가 더 앞이다
+    "2" > "12";               // f :문자열 2 와 12 앞자리를 비교하자
+    undefined == null;        // t :undefined 는 "오.직." null 하고만 같다!!
+    undefined === null;       // ing
+    null == "\n0\n";          // f :null 은 "오.직." undefined 하고만 같다!!
+    null === +"\n0\n";        // ing
+
+  </script>
+
+</body>
+
+</html>
