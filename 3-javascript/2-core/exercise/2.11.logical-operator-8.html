@@ -2,6 +2,12 @@
 
 <body>
   <script>
+    if (-1 || 0) alert('1st');
+    // if (-1) alert('first'); 뜸
+    if (-1 && 0) alert('2nd');
+    // if (0) alert('2nd'); 안뜸
+    if (-1 || 0) alert('first');
+    // if (-1 || 0) alert('first');
 
   </script>
 </body>
