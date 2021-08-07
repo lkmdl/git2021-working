@@ -22,15 +22,17 @@ if (login == '직원') {
 
 <body>
   <script>
-    let msg = prompt(login == 직원)
-      ? alert('안녕하세요')
-      : (login == '임원')
-        ? alert('환영합니다.')
-        : (login == ' ')
-          ? alert('로그인이 필요합니다.')
-          : '';
-    alert(msg);
 
+    let login = prompt('id 를 입력하세요.');
+
+    let msg =
+      login == '사원'
+        ? console.log('안녕하세요')
+        : login == '임원'
+          ? console.log('환영합니다.')
+          : login == ''
+            ? console.log('로그인이 필요합니다.')
+            : '';
   </script>
 </body>
 
