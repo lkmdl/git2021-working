@@ -1,0 +1,31 @@
+<html>
+
+<body>
+  <script>
+
+    let id = prompt(`who's there???`);
+
+    if (id == `admin`) {
+
+      let pw = prompt(`Password???`);
+
+      if (pw == `theMaster`) {
+        alert(`welcome!!!`);
+
+      } else if (pw == null) {
+        alert(`cancel`);
+
+      } else {
+        alert(`404 pw`);
+      }
+
+    } else if (id == null) {
+      alert(`cancel`);
+    } else {
+      alert(`i don't know who you are`)
+    }
+
+  </script>
+</body>
+
+</html>

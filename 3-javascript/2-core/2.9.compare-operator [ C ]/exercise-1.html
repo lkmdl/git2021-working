@@ -21,9 +21,9 @@ null === +"\n0\n"
     "apple" > "pineapple";    // t :유니코드 순서에 a가 더 앞이다
     "2" > "12";               // f :문자열 2 와 12 앞자리를 비교하자
     undefined == null;        // t :undefined 는 "오.직." null 하고만 같다!!
-    undefined === null;       // ing
+    undefined === null;       // f :=== 은 형까지 따진다
     null == "\n0\n";          // f :null 은 "오.직." undefined 하고만 같다!!
-    null === +"\n0\n";        // ing
+    null === +"\n0\n";        // f :null 은 "오.직." undefined 하고만 같다!!
 
   </script>
 
