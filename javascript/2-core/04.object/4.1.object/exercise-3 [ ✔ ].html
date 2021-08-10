@@ -1,0 +1,31 @@
+<!-- 
+
+  const와 함께 선언한 객체를 변경하는 게 가능할까요? 생각을 공유해주세요!
+
+  const user = {
+    name = "John"
+  };
+  // 아래 코드는 에러 없이 실행 될까요??
+  user.name = "pete";
+
+-->
+
+<html>
+
+<body>
+
+  <script>
+
+    const user = {
+      name = "John"
+    };
+    user.name = "pete";
+
+    // const 로 지정해준 변수는 바뀔수 없지만
+    // 그 안에 속성은 변경될수 있다.
+    alert(user.name) // 가능합니다.
+
+  </script>
+</body>
+
+</html>
