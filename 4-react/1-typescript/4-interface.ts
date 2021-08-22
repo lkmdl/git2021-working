@@ -9,6 +9,13 @@ interface User {
 }
 
 function printName(obj: User) {
+  //삭제한 속성은 반복문에서 안나옴
+  Object.keys(obj).forEach(key => {
+    console.log(key);
+  });
+  for (let prop of obj) {
+  }
+
   console.log(obj.firstname + " " + obj.lastname);
 }
 
@@ -24,6 +31,12 @@ const user: User = {
   firstname: "John",
   // lastname: "Smith",
 };
+
+// optional 
+delete user.lastname;
+
+// 속성 추가 불가능함
+// user.phone = "01012345678"
 
 const users: User[] = [
   { firstname: "John", lastname: "Smith" },
